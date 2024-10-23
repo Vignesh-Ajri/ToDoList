@@ -1,0 +1,89 @@
+#root{
+  max-width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  color: rgb(146, 68, 32);
+  font-family: monospace;
+  font-size: calc(18px + 4vmin);
+  margin-bottom: 1rem;
+}
+
+.to-do-header{
+  color: rgb(9, 153, 21);
+}
+
+.to-do{
+  margin: 0 auto 20px;
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+}
+
+input{
+  width: 80%;
+  outline: none;
+}
+
+input,
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(202, 170, 43);
+}
+
+button{
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(137, 238, 199);
+  margin-right: 5px;
+}
+
+#clear,
+.delete{
+  background-color: rgb(199, 120, 120);
+}
+
+ul{
+  list-style: none;
+}
+
+ul ::-webkit-scrollbar{
+  display: none;
+}
+
+ul li{
+  display: inline-flex;
+  max-width: 1024px;
+  width: 100%;
+  border: 2px solid rgb(221, 176, 51);
+  border-radius: 5px;
+  font-size: calc(10px + 2vmin);
+  padding: 5px;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+li span{
+  flex: 1;
+  border-radius: 5px;
+  margin-right: 5px;
+}
